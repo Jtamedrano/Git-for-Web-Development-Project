@@ -1,0 +1,238 @@
+Codepen Link (html + CSS practice): https://codepen.io/Jtamedrano/full/NWNwvWP
+
+1. What is Semantic HTML?
+"""
+HTML that has meaning to the context. It the use of proper tags where they go, such as header's on top and footers on the bottom.
+"""
+
+2. What is HTML used for? 
+"""
+HTML is purely a markup language. It is the building block of a web page.
+"""
+
+3. What is an attribute and where do we put it?
+"""
+Attributes are details within html tags that can help identify/customize elements.
+"""
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+"""
+H1 is equivalent to the title of the subject matter or page. It typically used once for heading importance and SEO.
+"""
+
+5. Name two tags that have required attributes
+"""
+anchor - <a>
+link - <link>
+"""
+
+6. What do we put in the head of our HTML document? 
+"""
+Page title, descripion, SEO data, css link, anything not directly seen on the page.
+"""
+
+7. What is an id? 
+"""
+An ID is an attribute used for most body tags that is used as a unique identify. It can only be named once through the whole file.
+"""
+
+8. What elements can I add an id to? 
+"""
+Any body tag. If js or css can manipulate it, you can ID it.
+"""
+
+9. How many times can I use the same id on a page?
+"""
+Once...
+"""
+
+10. What is a class?
+"""
+A class is a general name for a tag.Great from changing multiple specific tags (such as a specific group of div tags, or a section of code.)
+"""
+
+11. What elements can I add a class to? 
+"""
+Any body tag. If js or css can manipulate it, you can ID it.
+"""
+
+12. How many times can I use the same class on a page? 
+"""
+As many times as you have tags within the body.
+"""
+
+13. How do I get my link to open in a new tab?
+"""
+<a href="sitehere.com" target="_blank" />Takes You To Any Site You Want<a>
+"""
+
+14. What is the alt attribute in the image tag used for? 
+"""
+Used to identify the image incase it doesn't load properly/isn't found. Typically a name descriping the picture
+"""
+
+15. How do I reference an id?
+"""
+Use the "#" symbol
+"""
+
+16. What is the difference between a section and a div?
+"""
+A section is used semanticly to describe a section and has slightly more seo value comparted to div.
+A div is typically known as a division of the parent element.
+"""
+
+17. What is CSS used for? 
+"""
+Cascading Stylesheets are used to decorate and animate the page.
+"""
+
+18. How to we select an element? Example - every h2 on the page
+"""
+h2 {
+    attribute: value;
+}
+"""
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+"""
+A class is an attribute typically used to name a number of HTML tags. I might use a class on a number of div tags so they can all recieve the same css properties. 
+An id is an attribute used to identify one particular element. If i want one p tag out of all the many p tags customized, I would give it an ID to manipulate it. Easier to use with js too.
+"""
+
+20. How do we select classes in CSS?
+"""
+.classNameHere {
+
+}
+"""
+
+21. How do we select a p element with a single class of “human””?
+"""
+p .human {
+
+}
+"""
+
+22. What is a parent child selector? When would this be useful? 
+"""
+It is the use of calling elements within elements. This is useful if one would only want to customize the same group of elements within one html tag. (ie: all p tags in a div tag)
+"""
+
+23. How do you select all links within a div with the class of sidebar?
+"""
+.sidebar a {
+
+}
+"""
+
+24. What is a pseudo selector?
+"""
+a pseudo selector is a css specific selector used to manipulate instances such as hover, after, or visited.
+"""
+
+25. What do we use the change the spacing between lines?
+"""
+line-height: value;
+"""
+
+26. What do we use to change the spacing between letters?
+"""
+letter-spaceing: value;
+"""
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+"""
+text-transform: uppercase | lowercase | Capitalize;
+"""
+
+28. How do I add a 1px border around my div that is dotted and black?
+"""
+border: 1px dotted black;
+"""
+
+29. How do I select everything on the page? 
+"""
+* {
+
+}
+"""
+
+30. How do I write a comment in CSS?
+"""
+/* single line */
+/*
+Multi line
+*/
+"""
+
+31. How do I find out what file I am in, when I am using the command line? 
+"""
+pwd command
+"""
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+"""
+ls command
+"""
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+"""
+rm or rm -r. This is a permanent delete with no warnings or way to retrieve from trash.
+"""
+
+34. Why should I use version control?
+"""
+It allows for progress tracking and revert capability.
+"""
+
+35. How often should I commit to github?
+"""
+As often as necesary. Minor changes when done for the day. Major changes. completion of project.
+"""
+
+36. What is the command we would use to push our repo up to github? 
+"""
+git push origin <brank_name>
+"""
+
+37. Walk me through Lambda's git flow.
+"""
+1. Fork
+2. Clone
+3. Checkout (branch)
+4. Add 
+5. Commit (comments prefered)
+6. Push branch with name
+7.  Create pull request
+"""
+
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+"""
+blocks take up the entire width of its parent element
+inline elements take up the width of the content
+"""
+
+2. What happens when an element is positioned absolutely?
+"""
+element is positioned to the nearest positioned element, or moves with scroll of body.
+"""
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+"""
+make the element an inline, if not already. block will take up 100% of parent width available.
+"""
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+"""
+Block: any h#, p, div.
+inline: span or a
+inline-block: img
+"""
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+"""
+The box model is essentially the space around an element. Margin is the space away from the border. The border is the space between the margin and the padding. The padding is the space between the border and the content. The content is sized by the content within (by default). The "fix" is to use box-sizing: border-box to make the page account for all borders and paddings set specificlly.
+"""
